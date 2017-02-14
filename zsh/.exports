@@ -11,11 +11,11 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export JRUBY_OPTS=--2.0
 
 # PATH STUFF
-export PATH=$PATH:/home/nifty/bin
+export PATH=$PATH:/home/vagrant/bin
 
 # NIMBLE
-export PATH=$PATH:/home/nifty/.nimble/bin
+export PATH=$PATH:/home/vagrant/.nimble/bin
 
 # HOMEBREW
 
-export PATH=$PATH:/home/nifty/.linuxbrew/bin
+export PATH=$PATH:/home/vagrant/.linuxbrew/bin
