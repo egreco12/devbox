@@ -8,6 +8,8 @@ for rcfile in ~/.zprezto/runcoms/*; do ln -s "$rcfile" "~/.${rcfile}"; done; rm 
 
 # These dotfiles
 ssh-keygen -N "" -t rsa -C nessa.murmur@gmail.com
+cat ~/.ssh/id_rsa.pub
+read
 git clone git@github.com:levionessa/dotfiles.git
 cd ~/dotfiles
 
