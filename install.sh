@@ -6,9 +6,6 @@ chsh -s /bin/zsh
 git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
 for rcfile in ~/.zprezto/runcoms/*; do ln -s "$rcfile" "~/.${rcfile}"; done; rm ~/.README.md
 
-# These dotfiles
-ssh-keygen -N "" -t rsa -C nessa.murmur@gmail.com
-
 # Emacs Prelude
 curl -L http://git.io/epre | sh
 
