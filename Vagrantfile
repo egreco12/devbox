@@ -6,9 +6,9 @@ Vagrant.configure("2") do |config|
     v.memory = 1024
     v.cpus = 2
   end
-  
+
   config.vm.box = "ubuntu/trusty64"
-  config.vm.provision "shell", inline: <<-SHELL
+  config.vm.provision "shell", privileged: false, inline: <<-SHELL
     cd /vagrant
     ./install.sh
   SHELL
