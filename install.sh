@@ -11,6 +11,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
 ~/.pyenv/bin/pyenv install 2.7.11
 ~/.pyenv/bin/pyenv global 2.7.11
+~/.pyenv/shims/pip install tox awscli --upgrade
 
 # install nodenv
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
