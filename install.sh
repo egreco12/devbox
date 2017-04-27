@@ -7,19 +7,19 @@ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'export PYENV_VERSION=2.7.11' >> ~/.bashrc
-source ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
-pyenv install 2.7.11
-pyenv global 2.7.11
+~/.pyenv/bin/pyenv install 2.7.11
+~/.pyenv/bin/pyenv global 2.7.11
 
 # install nodenv
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(nodenv init -)"'
-git clone https://github.com/nodenv/node-build.git $(nodenv root)/plugins/node-build
-source ~/.bashrc
+echo 'eval "$(nodenv init -)"' >> ~/.bashrc
 
-nodenv install 4.2.1
-nodenv global 4.2.1
+git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
+
+~/.nodenv/bin/nodenv install 4.2.1
+~/.nodenv/bin/nodenv global 4.2.1
 
 echo "Done"
