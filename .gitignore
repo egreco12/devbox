@@ -2,3 +2,5 @@ ruby-build*
 chruby*
 .vagrant
 src/
+local_creds/
+.DS_Store

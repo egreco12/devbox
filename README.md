@@ -7,3 +7,5 @@ The Makefile is overly simple, but at the moment it gets the job done for what's
 Run `vagrant up`, and you get nodenv + nodenv 4.2.1, pyenv + python 2.7.11, `tox`, and `awscli`.
 Feel free to update your own setup as you wish.  Please note, you will need to deal with your
 ssh keys and AWS config manually.
+
+For anything you would like to place in your home directory (such as `.ssh` or `.aws` config directories), put your folders in `local_creds`, which will be copied over on install.
