@@ -9,7 +9,7 @@ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'export PYENV_VERSION=2.7.11' >> ~/.bashrc
-echo 'export PYTHONPATH=/vagrant/src/' >> ~/.bashrc
+echo 'export PYTHONPATH=/vagrant/code/' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
 echo 'Installing python modules...'
@@ -29,6 +29,7 @@ git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 
 echo 'Copying local config directories...'
 mkdir ~/.ssh
-cp -rf /vagrant/local_creds/.* ~/
+cp -rf /vagrant/local_creds/.ssh ~/
+cp -rf /vagrant/local_creds/.aws ~/
 
 echo "Done"
