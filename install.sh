@@ -15,7 +15,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 echo 'Installing python modules...'
 ~/.pyenv/bin/pyenv install 2.7.11
 ~/.pyenv/bin/pyenv global 2.7.11
-~/.pyenv/shims/pip install tox awscli --upgrade
+~/.pyenv/shims/pip install tox awscli virtualenv flask --upgrade
 
 echo 'Installing nodenv...'
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
@@ -24,8 +24,8 @@ echo 'eval "$(nodenv init -)"' >> ~/.bashrc
 
 git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 
-~/.nodenv/bin/nodenv install 4.2.1
-~/.nodenv/bin/nodenv global 4.2.1
+~/.nodenv/bin/nodenv install 6.10.3
+~/.nodenv/bin/nodenv global 6.10.3
 
 echo 'Copying local config directories...'
 mkdir ~/.ssh
